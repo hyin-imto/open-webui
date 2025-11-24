@@ -1,0 +1,14 @@
+
+#Actualizar el frontend y copilarlo
+
+cd C:\Users\hyin\Documents\open-webui\frontend
+npm run build
+
+Copy-Item -Path ..\build -Destination .\backend\open_webui\frontend -Recurse -Force
+
+
+
+
+#Lanzar la app con el backend ya copilado
+cd ..\backend
+>> uvicorn open_webui.main:app --host 0.0.0.0 --port 8080
