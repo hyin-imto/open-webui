@@ -91,7 +91,7 @@ known_source_ext = [
 
 
 class TikaLoader:
-    def __init__(self, url, file_path, mime_type=None, extract_images=None):
+    def __init__(self, url, file_path, mime_type=None, extract_images=True):
         self.url = url
         self.file_path = file_path
         self.mime_type = mime_type
