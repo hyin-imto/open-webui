@@ -147,7 +147,7 @@
 								</span>
 							</Tooltip>
 						{:else}
-							{$i18n.t('Hello IMTO, {{name}}', { name: $user?.name })}
+							{$i18n.t('Hello IMTO2, {{name}}', { name: $user?.name })}
 						{/if}
 					</div>
 				</div>
@@ -214,7 +214,7 @@
 					{toolServers}
 					{stopResponse}
 					{createMessagePair}
-					placeholder={$i18n.t('How can I help you today?')}
+					placeholder={$i18n.t('IMTO, How can I help you today?')}
 					{onChange}
 					on:upload={(e) => {
 						dispatch('upload', e.detail);
